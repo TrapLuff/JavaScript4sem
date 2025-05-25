@@ -1,0 +1,148 @@
+.white-theme {
+  background-color: #aaa;
+  color: #212121;
+}
+
+/* опишем базовый стиль кнопки калькулятора */
+
+body {
+  background-color: #0f0f0f;
+  background-size: cover; 
+  color: #aaa;         
+  font-size: 0.7rem;
+  font-family: 'Roboto', sans-serif; /* Шрифт YouTube */
+  font-weight: bold;
+  
+}
+
+p{
+ margin-top : 0px; /* Уменьшает отступ снизу */
+}
+
+a{
+  color: #aaa;         
+  font-size: 0.7rem;
+  font-family: 'Roboto', sans-serif; /* Шрифт YouTube */
+  font-weight: bold;
+}
+
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  height: 100vh; 
+}
+
+mark { background-color: #ff0033; }
+
+.my-btn { 
+  margin-right: 12px;          
+  margin-top: 12px;            
+  width: 50px;                 
+  height: 50px;               
+  border-radius: 8px;
+  border: none;                
+  background: #272727;         
+  color: #f1f1f1;               
+  
+  font-family: 'Roboto', sans-serif; /* Шрифт YouTube */
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 500;
+  cursor: pointer;             
+  user-select: none;           /* отключаем возможность выделить текст внутри кнопки */
+} 
+
+.my-btn:hover {
+  transition-duration: 500ms;
+  background: #3f3f3f; 
+}
+
+/* active - это состояние активации элемента. В случае кнопки - нажатие на нее */
+.my-btn:active {
+  transition-duration: 500ms;
+  filter: brightness(130%); /* увеличим интенсивность цвета для эффекта вспышки */
+}
+
+/* селектор для кнопок первостепенных операций */
+.my-btn.primary { 
+  background: #f1f1f1; /* цвет кнопки оранжевый */
+  color: #171717;
+}
+
+.my-btn.primary:hover {
+  transition-duration: 500ms;
+  background: #ffffff;
+}
+
+/* селектор для кнопок второстепенных операций */
+.my-btn.secondary { 
+  background: #f1f1f1; /* цвет кнопки оранжевый */
+  color: #171717;
+}
+
+/* селектор для кнопки расчета выражения (=) */
+.my-btn.execute { 
+  width: 115px;          /* сделаем кнопку шире других */
+}
+
+.my-btn.theme { 
+  background-color: #0f0f0f;
+  color: #f1f1f1;  
+  width: 245px; 
+  height: 32px;
+  font-weight: normal;
+  margin-bottom : 0px;
+  margin-top : 0px;
+}
+
+.my-btn.theme:hover {
+  background: #272727;
+  color: #f1f1f1;   
+}
+
+.my-btn.details { 
+  width: 245px; 
+  height: 32px;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+.my-btn.details:active { 
+  border-color: #1c62b9;
+}
+Ы
+.my-btn.details[open] {
+  transition-duration: 0ms;
+  margin-bottom: 20px;
+}
+
+/* селектор для поля вывода результата */
+.result { 
+  width: 230px;
+  height: 40px;
+  margin-bottom: 15px;         /* отступ снизу */
+  padding-right: 30px;         /* выступ справа */
+  border-radius: 40px;
+  align-items: center;
+  border: 1px solid hsl(0, 0%, 18.82%);
+  color: #aaa;         
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif; /* Шрифт YouTube */
+  font-weight: normal;
+
+  display: flex; 
+  align-items: center;
+  justify-content: flex-start; 
+  padding-left: 12px;
+}
+
+.result:active{
+  border-color: #1c62b9;
+}
+
+  .colored-output {
+    background-color: #4CAF50; /* Зеленый цвет */
+    color: white; /* Белый текст */
+}

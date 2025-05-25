@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="style yt.css"> 
+</head>
+
+<body>
+  <div class = "calc">
+    
+    <!-- блок с экраном калькулятора, где будет выводиться результат вычислений. -->
+    <div id="result" class="result">
+      0
+    </div>
+
+    <!-- блок с кнопками калькулятора. -->
+    <div>
+      <!--горизонтальный ряд из четырех кнопок-->
+      <div>  
+        <button id="btn_op_clear" class="my-btn secondary" title="Очистить">C</button>    <!-- про тэг кнопки: https://www.w3schools.com/tags/tag_button.asp -->
+        <button id="btn_op_sign" class="my-btn secondary" title="Смена знака">+/-</button>
+        <button id="btn_op_percent" class="my-btn secondary" title="Процент">%</button>
+        <button id="btn_op_div"class="my-btn primary" title="Делить">/</button>
+        <button id="btn_op_backspace" class="my-btn secondary" title="Стереть один знак">←</button>
+      </div>
+
+      <div>
+        <button id="btn_digit_7" class="my-btn" title="7">7</button>
+        <button id="btn_digit_8" class="my-btn" title="8">8</button>
+        <button id="btn_digit_9" class="my-btn" title="9">9</button>
+        <button id="btn_op_mult"class="my-btn primary" title="Умножить">x</button>
+        <button id="btn_op_square_root"class="my-btn primary" title="Взять квадратный корень">√x</button>
+      </div>
+
+      <div>
+        <button id="btn_digit_4" class="my-btn" title="4">4</button>
+        <button id="btn_digit_5" class="my-btn" title="5">5</button>
+        <button id="btn_digit_6" class="my-btn" title="6">6</button>
+        <button id="btn_op_minus"class="my-btn primary" title="Отнять">-</button>
+        <button id="btn_op_square"class="my-btn primary" title="Возвести в квадрат">x²</button>
+      </div>
+
+      <div>
+        <button id="btn_digit_1" class="my-btn" title="1">1</button>
+        <button id="btn_digit_2" class="my-btn" title="2">2</button>
+        <button id="btn_digit_3" class="my-btn" title="3">3</button>
+        <button id="btn_op_plus"class="my-btn primary" title="Сложить">+</button>
+        <button id="btn_op_factorial"class="my-btn primary" title="Вычислить факториал" >x!</button>
+      </div>
+
+      <div>
+        <button id="btn_digit_0" class="my-btn" title="0">0</button>
+        <button id="btn_digit_dot" class="my-btn" title="точка">.</button>
+        <button id="btn_digit_triple_zero" class="my-btn" title="000">000</button>
+        <button id="btn_op_equal" class="my-btn primary execute" title="Получить результат">=</button>
+      </div>
+    </div>
+    <br>
+    <button id="themeToggle" class="my-btn theme">Сменить тему</button>
+    <form action="page/new.html" target="_blank">
+        <button id="github" class="my-btn theme">Ссылка на гитхаб</button>
+    </form>
+    <button id="btn_op_output" class="my-btn theme">Сменить цвет окна вывода</button>
+    <button id="btn_op_factorial2" class="my-btn theme">Вычислить факториал</button>
+
+    <br>
+    <select id="dropdown" class="my-btn details">
+        <option value="1">Выпадающий</option>
+        <option value="2">Список</option>
+    </select>
+
+    <details class="my-btn details">
+        <summary>Автор</summary>
+        <a>Тенишев Александр Амирович, ИУ5-45Б</a>
+     </details>
+    <br>
+    
+    <div class="goal">
+        Цель работы: <mark>Знакомство</mark> с основами <mark>HTML</mark> и <mark>CSS</mark>.
+    </div>
+    <p>ЛР выполнена Тенишевым Александром Амировичем</p>
+  </div>
+  <script src=script.js></script>
+</body>
+</html>
